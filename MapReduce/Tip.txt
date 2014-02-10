@@ -1,0 +1,7 @@
+you might need to know:
+ssh -i 15639-Project-1-1.pem ubuntu@ec2-54-84-58-65.compute-1.amazonaws.com
+wget http://s3.amazonaws.com/ec2-downloads/ec2-api-tools.zip
+unzip ec2-api-tools.zip
+scp -i 15639-Project-1-1.pem cert-BNZZ3GBJ46SFELLQMGDZY35EYHX66NC3.pem pk-BNZZ3GBJ46SFELLQMGDZY35EYHX66NC3.pem ubuntu@ec2-54-84-58-65.compute-1.amazonaws.com:~
+source .bashrc
+ec2-run-instances ami-69e3d500 -k 15639-Project-1-1 --instance-type t1.micro
