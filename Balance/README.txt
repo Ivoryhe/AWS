@@ -11,6 +11,9 @@ sudo apt-get build-dep libxml-parser-perl
 sudo cpan XML::Parser
 sudo cpan XML::Simple
 sudo cpan Net::Amazon::EC2
+sudo cpan VM::EC2::REST::autoscaling
+sudo cpan VM::EC2 (you might need to force installation)
+sudo cpan install --force VM::EC2
 
 for Cloudwatch
 http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/mon-scripts-perl.html
